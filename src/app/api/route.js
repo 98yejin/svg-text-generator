@@ -8,7 +8,6 @@ import {
 
 export async function GET(request) {
   const { searchParams } = new URL(request.url);
-  console.log(searchParams);
   const type = searchParams.get("type");
   const fontSize = searchParams.get("fontSize") || 24;
   const fontColor = searchParams.get("fontColor") || "black";
